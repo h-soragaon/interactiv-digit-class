@@ -71,7 +71,7 @@ var base_url = window.location.origin;
 let model;
 (async function(){  
     console.log("model loading...");  
-    model = await tf.loadLayersModel("https://h-soragaon.github.io/interactiv-digit-class/model/model.json")
+    model = await tf.loadLayersModel("https://h-soragaon.github.io/interactiv-digit-class/models/model.json")
     console.log("model loaded..");
 })();
 
@@ -99,7 +99,7 @@ function preprocessCanvas(image) {
 
 document.getElementById('predictButton').addEventListener("click",async function(){     
     var imageData = myCanvas.toDataURL();    
-    let tensor = preprocessCanvas(imageData); 
+    let tensor = preprocessCanvas(myCanvas); 
     console.log(tensor)   
     let predictions = await model.predict(tensor).data();  
     console.log(predictions)  
@@ -113,7 +113,7 @@ document.getElementById('predictButton').addEventListener("click",async function
 
 function displayLabel(results) { 
     var max = results[0], maxIndex = 0;    
-    for (var i = 1; i < data.length; i++) {        
+    for (var i = 1; i < results.length; i++) {        
         if (results[i] > max) {            
             max = results[i];    
             maxIndex = i;
