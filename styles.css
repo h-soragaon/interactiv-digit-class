@@ -1,8 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
     background-color: black;
+}
+
+.one-container {
+    display: flex;
+    justify-content: start;
+    margin-left: 45px;
+    margin-top: 45px;
 }
 
 .back-button {
@@ -12,8 +21,6 @@ body {
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 45px;
-    margin-top: 45px;
 }
 
 .back-button:hover {
@@ -30,26 +37,33 @@ body {
 }
 
 .heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: auto;
-    padding: 15px;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
 }
 
 .heading {
-    position: relative;
     color: white;
     font-size: 32px;
     text-align: center;
 }
 
-p {
+.head-para-text {
+    color: white;
     text-align: center;
+    transform: translateY(-110%);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-45%);
 }
 
 .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: auto;
 }
 
@@ -59,6 +73,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: auto;
 }
 
 /* .canvas-container {
@@ -81,6 +96,7 @@ canvas {
     width: 7.5em;
     background-color: #ffffff; 
     font-size: 22px;
+    font-family: 'PT Sans', sans-serif;
     color: rgb(0, 0, 0);
     padding: 7.5px;
     border-radius: 5px;
@@ -102,25 +118,28 @@ canvas {
     align-items: center;
 }
 
-h2 {
+.h2-text {
     color: #ffffff;
-}
-
-p {
-    color: #ffffff;
+    transform: translateY(-250%);
 }
 
 .rectangle {
-    width: 200px; /* Half the size of canvas */
-    height: 200px; /* Half the size of canvas */
+    width: 200px; 
+    height: 200px; 
     background-color: rgb(0, 0, 0);
     border: 1px solid #ffffff;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(-35%);
 }
 
-h1 {
+.result-text {
     color: white;
+    font-size: 108px;
 }
 
-p {
+.para-text {
     color: white;
+    transform: translateY(-250%);
 }

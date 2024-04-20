@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactiv Digit Classifier</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Style sheet -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Back icon source reference -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -13,12 +22,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
 </head>
 <body>
-    <button id="backButton" class="back-button"><i class="fas fa-arrow-left"></i></button>
+    <div class="one-container">
+        <button id="backButton" class="back-button"><i class="fas fa-arrow-left"></i></button>
+    </div>
     <div class="heading-container">
         <h1 class="heading">Interactiv Digit Classifier</h1>
-        <p>Using CNNs to classify handwritten numeric digits in Kannada script</p>
+        <p class="head-para-text">Using CNNs to classify handwritten numeric digits in Kannada script</p>
     </div>
-
+    <div class="image-container">
+        <img class="image" src="images/kannada-numerals.png" alt="kannada numerals">
+    </div>
     <div class="container">
         <div class="canvas-column">
             <div class="canvas-container">
@@ -30,11 +43,11 @@
             </div>
         </div>
         <div class="prediction-column">
-            <h2>Prediction</h2>
+            <h2 class="h2-text">Prediction</h2>
             <div class="rectangle">
-                <h1 id="result">-</h1>
+                <h1 class="result-text" id="result"> </h1>
             </div>
-            <p id="confidence">Confidence: -</p>
+            <p class="para-text" id="confidence">Confidence: </p>
         </div>
     </div>
     
