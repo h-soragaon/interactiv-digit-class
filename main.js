@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Event listener for the "Back" button
     const backButton = document.getElementById("backButton");
     backButton.addEventListener("click", function() {
-        window.location.href = "https://h-soragaon.github.io/"; // Replace "your_link_page.html" with the actual URL
+        window.location.href = "https://h-soragaon.github.io/";
     });
 
 });

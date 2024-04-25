@@ -40,8 +40,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transform: translateY(-55%);
     height: auto;
-    transform: translateY(-40%);
 }
 
 .heading {
@@ -56,40 +56,45 @@ body {
     transform: translateY(-110%);
 }
 
+/* .image {
+    scale: 0.55;
+    transform: translateY(-50%);
+} */
+
 .image-container {
     display: flex;
     justify-content: center;
-    transform: translateY(-45%);
-}
-
-.container {
-    display: flex;
+    transform: translateY(-55%);
     height: auto;
 }
 
-.canvas-column {
-    flex: 1;
+.content-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: auto;
 }
 
-/* .canvas-container {
-    position: relative;
-    transform: translate(10%, -10%);
-} */
+.canvas-column {
+    justify-content: center;
+    align-items: center;
+}
 
 canvas {
     border: 4px solid #ffffff;
 }
 
-.buttons-container {
-    flex: 1;
-    display: flex;
+.buttons-column {
     justify-content: center;
     align-items: center;
+    width: 200px;
+    transform: translateX(-35%);
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .action-button {
@@ -111,27 +116,27 @@ canvas {
 }
 
 .prediction-column {
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: translateX(-55%);
 }
 
 .h2-text {
     color: #ffffff;
-    transform: translateY(-250%);
+    /* transform: translateY(-250%); */
 }
 
 .rectangle {
-    width: 200px; 
-    height: 200px; 
+    width: 250px; 
+    height: 250px; 
     background-color: rgb(0, 0, 0);
     border: 1px solid #ffffff;
     align-content: center;
     justify-content: center;
     text-align: center;
-    transform: translateY(-35%);
+    /* transform: translateY(-35%); */
 }
 
 .result-text {
@@ -141,5 +146,5 @@ canvas {
 
 .para-text {
     color: white;
-    transform: translateY(-250%);
+    /* transform: translateY(-250%); */
 }
